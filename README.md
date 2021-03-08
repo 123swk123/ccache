@@ -10,24 +10,6 @@ Ccache (or “ccache”) is a compiler cache. It [speeds up
 recompilation](https://ccache.dev/performance.html) by caching previous
 compilations and detecting when the same compilation is being done again.
 
-Windows 10 Build Process
-------------------------
-```
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DZSTD_FROM_INTERNET=ON ..
-```
-**For 64bit Executable**
-```
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Auxiliary\Build\vcvars64.bat
-devenv ccache.sln /build Release /project ccache 
-```
-
-**For 32bit Executable**
-```
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Auxiliary\Build\vcvars32.bat
-devenv ccache.sln /build Release /project ccache 
-```
 
 General information
 -------------------
@@ -49,6 +31,7 @@ Contributing to ccache
 * [Mailing list](https://lists.samba.org/mailman/listinfo/ccache/)
 * [Chat](https://gitter.im/ccache/ccache)
 * [Bug report info](https://ccache.dev/bugs.html)
+* [Discussions](https://github.com/ccache/ccache/discussions)
 * [Issue tracker](https://github.com/ccache/ccache/issues)
   * [Help wanted!](https://github.com/ccache/ccache/labels/help%20wanted)
   * [Good first issues!](https://github.com/ccache/ccache/labels/good%20first%20issue)
